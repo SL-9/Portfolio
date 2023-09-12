@@ -1,0 +1,582 @@
+@charset "utf-8";
+
+/* common */
+
+html {
+	font-size: 100%;
+	/* font-size: 62.5%; */
+	/* 62.5に設定すると基準が10pxになり計算しやすくなる */
+}
+
+body {
+	/* background-color: pink; */
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	margin: 0 auto 130px;
+}
+
+/* セクションのくくりをまとめてる */
+
+.sec-title {
+	margin-bottom: 65px;
+}
+
+
+/* header */
+
+header {
+	max-width: 960px;
+	height: 270px;
+	margin: 0 auto;
+	padding: 0 4%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+h1 {
+	font-weight: normal;
+	/* フォントの太字を解除 */
+	font-size: 28px;
+}
+
+header ul {
+	list-style: none;
+	/* 箇条書きの先頭の丸をとる */
+	display: flex;
+	gap: 30px;
+	/* それぞれに均等のアキを設定 */
+	font-size: 14.4px;
+}
+
+a {
+	text-decoration: none;
+	/* リンクの下線をとります */
+	color: inherit;
+	/* 既存のカラーに戻します */
+}
+
+a:hover {
+	opacity: 0.7;
+	/* カーソルを合わせた時の不透明度 */
+}
+
+/* div */
+
+#mainvisual {
+	margin-bottom: 80px;
+}
+
+#mainvisual img {
+	width: 100%;
+	max-width: 1920px;
+	/* 画像の横幅サイズにあわせて最大幅を指定します */
+	height: 420px;
+	object-fit: cover;
+	/* 横幅は画面サイズにあわせて伸縮します */
+}
+
+/* About */
+
+#About {
+	max-width: 960px;
+	/* margin: 0 auto 130px; */
+	padding: 0 4%;
+}
+
+#About h2 {
+	/* margin: 65px 0; */
+	text-align: center;
+}
+
+#About ul {
+	list-style: none;
+	/* 箇条書きの先頭の丸をとる */
+	font-size: 14.4px;
+	margin-bottom: 30px;
+}
+
+#About li:first-child {
+	margin-bottom: 30px;
+}
+
+#About p {
+	text-align: justify;
+	/* DTPでいうところの両端揃え */
+	font-size: 14.4px;
+}
+
+/* Works */
+
+#Works {
+	max-width: 960px;
+	/* margin: 0 auto 130px; */
+	padding: 0 4%;
+}
+
+#Works h2 {
+	/* margin: 0 0 65px; */
+	text-align: center;
+}
+
+#Works ul {
+	list-style: none;
+	/* 箇条書きの先頭の丸をとる */
+	display: flex;
+	gap: 30px;
+}
+
+#Works li {
+	/* width: 31%; */
+	text-align: center;
+	margin-bottom: 23px;
+}
+
+#Works h3 {
+	margin-top: 5px;
+	font-weight: normal;
+	font-size: 14.4px;
+}
+
+/* News */
+
+#News {
+	max-width: 960px;
+	/* margin: 0 auto 130px; */
+	padding: 0 4%;
+}
+
+#News h2 {
+	/* margin: 0 0 65px; */
+	text-align: center;
+}
+
+#News dl {
+	display: flex;
+	flex-wrap: wrap;
+	/* フレックスアイテムを折り返す */
+	border-top: solid 1px #c8c8c8;
+	margin-bottom: 20px;
+}
+
+#News dt {
+	width: 20%;
+	border-bottom: solid 1px #c8c8c8;
+	padding: 15px;
+	font-size: 14.4px;
+}
+
+#News dd {
+	width: 80%;
+	border-bottom: solid 1px #c8c8c8;
+	padding: 15px;
+	font-size: 14.4px;
+}
+
+/* contact */
+
+#contact {
+	max-width: 960px;
+	/* margin: 0 auto 130px; */
+	padding: 0 4%;
+}
+
+#contact h2 {
+	/* margin: 0 0 65px; */
+	text-align: center;
+}
+
+#contact dl {
+	display: flex;
+	flex-wrap: wrap;
+	/* フレックスアイテムを折り返す */
+	margin-bottom: 20px;
+}
+
+#contact dt {
+	width: 15%;
+	font-size: 14.4px;
+}
+
+#contact dd {
+	width: 85%;
+	margin-bottom: 10px;
+}
+
+#contact dd input,
+#contact dd textarea {
+	width: 100%;
+	border: solid 1px #c8c8c8;
+	padding: 10px;
+}
+
+#contact dd textarea {
+	height: 10rem;
+	/* 160px */
+}
+
+/* 自分で作ってみた */
+/* #contact .button input {
+	display: block;
+	width: 100px;
+	height: 35px;
+	padding: 5px;
+	border-radius: 10px;
+	margin: 0 auto;
+	background-color: #000000;
+	color: #ffff;
+} */
+
+#contact .button {
+	text-align: center;
+}
+
+#contact .button input {
+	width: 200px;
+	background-color: #24292e;
+	color: #fff;
+	padding: 15px 0;
+	border: solid 1px #24292e;
+}
+
+/* カーソルをのせた時の処理 */
+#contact .button input:hover {
+	background-color: #fff;
+	color: #24292e;
+}
+
+/* footer */
+
+#footer {
+	text-align: center;
+	background-color: #24292e;
+	color: #fff;
+	font-size: 10px;
+	padding: 10px 20px;
+}
+
+/* SP */
+
+@media screen and (max-width: 600px) {
+	.wrapper {
+		margin-bottom: 70px;
+	}
+
+	.sec-title {
+		margin-bottom: 40px;
+	}
+
+	/* header */
+
+	header {
+		width: 100%;
+		/* 親要素の幅いっぱい */
+		/* display: flex; */
+		flex-direction: column;
+		/* justify-content: flex-start; */
+		/* 左寄せ上寄せで配置 */
+		height: auto;
+		/* 中身に合わせて親伸び縮み（PC版のアキをリセット） */
+	}
+
+	h1 {
+		margin-top: 15px;
+	}
+
+	header ul {
+		padding: 10px 0;
+		/* font-size: 12.8px; */
+		font-size: 0.8rem;
+		gap: 20px;
+	}
+
+	/* Works */
+
+	#Works ul {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	#Works li {
+		margin-bottom: 40px;
+	}
+
+	#Works img {
+		margin-top: 15px;
+		width: 90%;
+	}
+
+	#Works h3 {
+		/* font-size: 1.1rem; */
+		font-size: 16.4px;
+	}
+
+	/* News */
+
+	#News dl {
+		flex-direction: column;
+	}
+
+	#News dt {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+
+	#News dd {
+		width: 100%;
+		padding-top: 0;
+	}
+
+	/* contact */
+
+	#contact h2 {
+		padding-top: 40px;
+	}
+
+	#contact dl {
+		flex-direction: column;
+	}
+
+	#contact dt {
+		width: 100%;
+	}
+
+	#contact dd {
+		width: 100%;
+	}
+
+	.container {
+		position: relative;
+		padding-bottom: 60px;
+		box-sizing: border-box;
+		min-height: 100vh;
+	}
+
+	#footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+}
+
+/* web1 */
+
+.web1 {
+	max-width: 960px;
+	margin: 30px auto 30px;
+	padding: 0 4%;
+}
+
+.web1 h2 {
+	font-size: 18.4px;
+	font-weight: lighter;
+	margin-bottom: 35px;
+}
+
+.web1 img {
+	width: 100%;
+}
+
+.web1 h3 {
+	margin: 35px 0 15px 0;
+	font-size: 14.4px;
+}
+
+.web1 .skill {
+	margin-bottom: 15px;
+	font-size: 14.4px;
+}
+
+.web1 .readlast {
+	margin-bottom: 30px;
+	font-size: 14.4px;
+}
+
+.web1 div {
+	text-align: right;
+}
+
+.web1 a {
+	font-size: 14.4px;
+}
+
+@media screen and (max-width: 600px) {
+	.web1 h2 {
+		padding-top: 35px;
+		text-align: center;
+	}
+
+	.container {
+		position: relative;
+		padding-bottom: 60px;
+		box-sizing: border-box;
+		min-height: 100vh;
+	}
+
+	#footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+}
+
+
+/* GraphicDesign1 */
+
+.GraphicDesign1 {
+	max-width: 960px;
+	margin: 30px auto 30px;
+	padding: 0 4%;
+}
+
+.GraphicDesign1 h2 {
+	font-size: 18.4px;
+	font-weight: lighter;
+	margin-bottom: 35px;
+}
+
+.GraphicDesign1 img {
+	width: 100%;
+}
+
+.GraphicDesign1 h3 {
+	margin: 35px 0 15px 0;
+	font-size: 14.4px;
+}
+
+.GraphicDesign1 .skill {
+	margin-bottom: 15px;
+	font-size: 14.4px;
+}
+
+.GraphicDesign1 .readlast {
+	margin-bottom: 30px;
+	font-size: 14.4px;
+}
+
+.GraphicDesign1 div {
+	text-align: right;
+}
+
+.GraphicDesign1 a {
+	font-size: 14.4px;
+}
+
+@media screen and (max-width: 600px) {
+	.GraphicDesign1 h2 {
+		padding-top: 35px;
+		text-align: center;
+	}
+
+	.container {
+		position: relative;
+		padding-bottom: 60px;
+		box-sizing: border-box;
+		min-height: 100vh;
+	}
+
+	#footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+}
+
+/* Illustrator1 */
+
+.Illustrator1 {
+	max-width: 960px;
+	margin: 30px auto 30px;
+	padding: 0 4%;
+}
+
+.Illustrator1 h2 {
+	font-size: 18.4px;
+	font-weight: lighter;
+	margin-bottom: 35px;
+}
+
+.imageItem {
+	text-align: center;
+
+}
+
+.imageItem img {
+	width: 80%;
+	cursor: pointer;
+	/* カーソルを指マークに */
+}
+
+.modalItem {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.modalItem img {
+	width: 50vw;
+	cursor: pointer;
+	/* カーソルを指マークに */
+}
+
+.modalItem.open {
+	display: flex;
+}
+
+.Illustrator1 h3 {
+	margin: 35px 0 15px 0;
+	font-size: 14.4px;
+}
+
+.Illustrator1 .skill {
+	margin-bottom: 15px;
+	font-size: 14.4px;
+}
+
+.Illustrator1 .readlast {
+	margin-bottom: 30px;
+	font-size: 14.4px;
+}
+
+.next {
+	text-align: right;
+}
+
+.Illustrator1 a {
+	font-size: 14.4px;
+}
+
+@media screen and (max-width: 600px) {
+	.Illustrator1 h2 {
+		padding-top: 35px;
+		text-align: center;
+	}
+
+	.container {
+		position: relative;
+		padding-bottom: 60px;
+		box-sizing: border-box;
+		min-height: 100vh;
+	}
+
+	.modalItem img {
+		width: 100vw;
+	}
+
+	#footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+}

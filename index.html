@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SL9 - portfolio</title>
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<h1>Works</h1>
+			<nav>
+				<ul>
+					<li><a href="#About">About</a></li>
+					<li><a href="#Works">Works</a></li>
+					<li><a href="#News">News</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<div id="mainvisual">
+				<picture> <!-- 画面幅や端末の条件に応じて画像を切り替えて表示 -->
+					<source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg">
+					<img src="img/mainvisual-pc.jpg" alt="テキストテキストテキスト">
+				</picture>
+			</div>
+			<section id="About" class="wrapper">
+				<h2 class="sec-title">About</h2>
+				<ul>
+					<li>SL9</li>
+					<li>url:xxxxxxxxxx</li>
+					<li>mail: sl9.radio@gmail.com</li>
+				</ul>
+				<p>
+					はじめまして、chocobadです。<br>
+					おもに、ウェブ制作、グラフィックデザイン、イラストレーターの3つに焦点を当てています。
+					クライアント様とのコラボレーションを通じてビジョンを実現し、視覚的なストーリーテリングを通じて、クライアント様とその先の人々に感動と洞察を提供することを目標とし活動しています。
+
+					ポートフォリオには、多彩なプロジェクトが詰まっています。カラフルなキャンペーン、洗練されたウェブサイト、そしてアートの可能性を追求する実験的な作品などが含まれています。一緒に新しいプロジェクトに取り組めることを楽しみにしています。よろしくお願いいたします。
+				</p>
+			</section>
+			<section id="Works" class="wrapper">
+				<h2 class="sec-title">Works</h2>
+				<ul>
+					<li>
+						<a href="web1.html">
+							<img src="img/works1.jpg" alt="テキストテキストテキスト">
+							<h3>Web</h3>
+						</a>
+
+					</li>
+					<li>
+						<a href="GraphicDesign1.html">
+							<img src="img/works2.jpg" alt="テキストテキストテキスト">
+							<h3>Graphic Design</h3>
+						</a>
+
+					</li>
+					<li>
+						<a href="Illustrator1.html">
+							<img src="img/works3.jpg" alt="テキストテキストテキスト">
+							<h3>Illustrator</h3>
+						</a>
+
+					</li>
+				</ul>
+			</section>
+			<section id="News" class="wrapper">
+				<h2 class="sec-title">News</h2>
+				<dl>
+					<dt>2023.06.17</dt>
+					<dd>LOOP GIRL様のHPをご担当させていただきました。</dd>
+					<dt>2023.00.00</dt>
+					<dd>ポートフォリオサイトを公開いたしました。</dd>
+					<!-- 記事更新はこちら -->
+				</dl>
+			</section>
+			<section id="contact" class="wrapper">
+				<h2 class="sec-title">Contact</h2>
+				<!-- <form aciton="#" method="post"> -->
+				<form aciton="mailto:sl9.radio@gmail.com" method="post" enctype="text/plain">
+					<dl>
+						<dt><label for="name">NAME</label></dt>
+						<dd><input type="text" id="name" name="your-name"></dd>
+						<dt><label for="email">E-mail</label></dt>
+						<dd><input type="email" id="email" name="your-email"></dd>
+						<dt><label for="message">MESSAGE</label></dt>
+						<dd><textarea id="message" name="your-message"></textarea></dd>
+					</dl>
+					<div class="button"><input type="submit" value="submit"></div>
+				</form>
+			</section>
+		</main>
+
+		<footer id="footer">
+			<p>&copy; 2023 Works</p>
+		</footer>
+	</div>
+
+</body>
+
+</html>
